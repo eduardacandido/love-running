@@ -21,6 +21,7 @@ h2 {
 #logo {
     float: left;
     font-size: 200%;
+    margin-left: 30px;
 }
 
 #logo, #menu {
@@ -85,7 +86,7 @@ h2 {
     font-size: 130%;
     font-family: Oswald;
     text-transform: uppercase;
-    letter-spacing: 4s;
+    letter-spacing: 4px;
 
     width: 300px;
     height: 200px;
@@ -99,7 +100,6 @@ h2 {
     right: 150px;
 
     position: absolute;
-
 }
 
 #club-ethos {
@@ -214,4 +214,100 @@ footer {
     clear: both;
     line-height: 0;
     column-count: 4;
+    column-gap: 0px;
+}
+
+#photos img {
+    width: 100%;
+}
+
+.form-section {
+    clear: both;
+    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+@media screen and (max-width: 1393px) {
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    #welcome {
+        padding: 30px 0;
+        margin-top: 0;
+    }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #times div {
+        width: 100%;
+        clear: both;
+        height: 150px;
+        border: solid 1px #fff;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:943px) {
+    #menu {
+        clear: both;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    #cover-text {
+        left: 0px;
+    }
+
+    #club-ethos {
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .left-about-heading, .right-about-heading {
+        width: inherit;
+    }
+
+    .left-about-heading h2, .right-about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-about-heading p, .right-about-heading p {
+        text-align: center;
+        padding: 0 20px 0 20px;
+    }
+
+    #photos {
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
+    }
 }
